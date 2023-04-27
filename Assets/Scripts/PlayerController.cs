@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     private int count;
     private float movementX;
     private float movementY;
+    private float timeRemaining;
 
     public int lvlNum = 1;
 
@@ -34,12 +35,14 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         count = 0;
+        timeRemaining = 10f;
 
         setCountText();
         winTextObject.SetActive(false);
         nextLvlBtn.SetActive(false);
         loseTextObject.SetActive(false);
         tryAgainButton.SetActive(false);
+        StartCoroutine(UpdateTime());
     }
 
     void OnMove (InputValue movementValue)
@@ -82,9 +85,9 @@ public class PlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
             count++;
             setCountText();
+            timeRemaining += 1;
         }
         
-
     }
 
     void OnCollisionEnter (Collision other)
@@ -112,6 +115,18 @@ public class PlayerController : MonoBehaviour
             tryAgainButton.SetActive(true);
         }
         
+    }
+
+    IEnumerator UpdateTime()
+    {
+        while (timeRemaining > 0)
+        {
+            timeRemaining -= Time.deltaTime;
+            timerText.text = "Time Left: " + timeRemaining.ToString("F1");
+            yield return null;
+        }
+        showLose();
+        speed = 0;
     }
 
 } 
