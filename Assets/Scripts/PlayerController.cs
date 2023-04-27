@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    //Game Object Variables
+    //Game Object Variables test
     public TextMeshProUGUI countText;
     public TextMeshProUGUI timerText;
     public GameObject winTextObject;
