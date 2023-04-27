@@ -7,9 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    //Game Object Variables
+    //Game Object Variables test
     public TextMeshProUGUI countText;
-    public TextMeshProuGUI timerText;
+    public TextMeshProUGUI timerText;
     public GameObject winTextObject;
     public GameObject nextLvlBtn;
 
