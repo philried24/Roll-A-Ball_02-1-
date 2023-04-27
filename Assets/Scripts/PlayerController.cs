@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
 {
     //Game Object Variables
     public TextMeshProUGUI countText;
-    public TextMeshProuGUI timerText;
+    public TextMeshProUGUI timerText;
     public GameObject winTextObject;
     public GameObject nextLvlBtn;
 
@@ -18,12 +18,13 @@ public class PlayerController : MonoBehaviour
 
     //variables for player
     public float speed = 0;
+    public float timeRemaining;
 
     private Rigidbody rb;
     private int count;
     private float movementX;
     private float movementY;
-    private float timeRemaining;
+    
 
     public int lvlNum = 1;
 
@@ -79,6 +80,7 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(movement * speed);
     }
 
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("PickUp") && lvlFailed == false)
@@ -91,6 +93,7 @@ public class PlayerController : MonoBehaviour
         
     }
 
+
     void OnCollisionEnter (Collision other)
     {
         if (other.gameObject.tag == "Spike")
@@ -98,6 +101,7 @@ public class PlayerController : MonoBehaviour
                 showLose();
         }
     }
+
 
     void showWin()
     {
@@ -107,6 +111,7 @@ public class PlayerController : MonoBehaviour
         lvlNum++;
     }
 
+
     void showLose()
     {
         if (lvlWin == false)
@@ -114,9 +119,11 @@ public class PlayerController : MonoBehaviour
             lvlFailed = true;
             loseTextObject.SetActive(true);
             tryAgainButton.SetActive(true);
+            speed = 0;
         }
         
     }
+
 
     IEnumerator UpdateTime()
     {
@@ -127,7 +134,6 @@ public class PlayerController : MonoBehaviour
             yield return null;
         }
         showLose();
-        speed = 0;
     }
 
 } 
