@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 {
     //Game Object Variables
     public TextMeshProUGUI countText;
+    public TextMeshProuGUI timerText;
     public GameObject winTextObject;
     public GameObject nextLvlBtn;
 
