@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4374894, g: 0.48531085, b: 0.56558484, a: 1}
+  m_IndirectSpecularColor: {r: 0.43749017, g: 0.4853112, b: 0.56558603, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2479,8 +2479,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6631538dc4f02458f66eaa1ee96648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isup: 1
-  ychange: {x: 0, y: 0, z: 0}
 --- !u!1001 &184472200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2664,8 +2662,6 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  isup: 1
-  ychange: {x: 0, y: 0, z: 0}
 --- !u!1001 &192918335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3218,8 +3214,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6631538dc4f02458f66eaa1ee96648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isup: 1
-  ychange: {x: 0, y: 0, z: 0}
 --- !u!1001 &258890329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4907,6 +4901,7 @@ MonoBehaviour:
   loseTextObject: {fileID: 1182316657}
   tryAgainButton: {fileID: 507820519}
   speed: 10
+  timeRemaining: 0
   lvlNum: 1
 --- !u!1001 &420971826
 PrefabInstance:
@@ -14593,8 +14588,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6631538dc4f02458f66eaa1ee96648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isup: 1
-  ychange: {x: 0, y: 0, z: 0}
 --- !u!1001 &1685850955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14693,8 +14686,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6631538dc4f02458f66eaa1ee96648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isup: 1
-  ychange: {x: 0, y: 0, z: 0}
 --- !u!1001 &1703657570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14855,8 +14846,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43327709779e14e868da79920180b9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isup: 1
-  ychange: {x: 0, y: 0, z: 0}
 --- !u!1001 &1717215351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15601,6 +15590,7 @@ MonoBehaviour:
   loseTextObject: {fileID: 1182316657}
   tryAgainButton: {fileID: 507820519}
   speed: 7
+  timeRemaining: 0
   lvlNum: 1
 --- !u!114 &1789886119
 MonoBehaviour:
@@ -18012,8 +18002,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6631538dc4f02458f66eaa1ee96648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isup: 1
-  ychange: {x: 0, y: 0, z: 0}
 --- !u!1 &2002396191
 GameObject:
   m_ObjectHideFlags: 0
@@ -18049,7 +18037,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 316, y: 221}
+  m_AnchoredPosition: {x: 316, y: 158.6}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2002396193
@@ -18081,8 +18069,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -18135,7 +18123,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -14.855286, y: 0, z: -27.8255, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -20019,8 +20007,6 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  isup: 1
-  ychange: {x: 0, y: 0, z: 0}
 --- !u!4 &3702134514566898932 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6238402375491939204, guid: 8e0c2df13eaab7142a236b710528c469, type: 3}
