@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         count = 0;
-        timeRemaining = 10f;
+        timeRemaining = 50f;
 
         setCountText();
         winTextObject.SetActive(false);
@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
             count++;
             setCountText();
-            timeRemaining += 1;
+            timeRemaining += 7;
         }
         
     }
@@ -127,7 +127,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator UpdateTime()
     {
-        while (timeRemaining > 0)
+        while (timeRemaining > 0 && lvlWin == false && lvlFailed == false)
         {
             timeRemaining -= Time.deltaTime;
             timerText.text = "Time Left: " + timeRemaining.ToString("F1");

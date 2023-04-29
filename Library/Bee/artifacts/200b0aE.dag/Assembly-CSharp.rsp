@@ -358,6 +358,7 @@
 "Assets/Scripts/Rotator.cs"
 "Assets/Scripts/StartLevel.cs"
 "Assets/Scripts/YMovement1.cs"
+"Assets/Scripts/YMovement2.cs"
 -langversion:9.0
 
 /deterministic
