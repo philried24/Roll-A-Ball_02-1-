@@ -4989,7 +4989,7 @@ MonoBehaviour:
   loseTextObject: {fileID: 1106939445}
   tryAgainButton: {fileID: 1106939444}
   speed: 10
-  lvlNum: 2
+  lvlNum: 3
 --- !u!1001 &223043653
 PrefabInstance:
   m_ObjectHideFlags: 0

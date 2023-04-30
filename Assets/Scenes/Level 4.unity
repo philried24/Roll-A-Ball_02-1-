@@ -13622,6 +13622,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7353159923908425126, guid: 12800ed36d05747fb9583721c12e6e78, type: 3}
+      propertyPath: lvlNum
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7353159923908425126, guid: 12800ed36d05747fb9583721c12e6e78, type: 3}
       propertyPath: countText
       value: 
       objectReference: {fileID: 666169284}
