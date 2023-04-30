@@ -11,6 +11,11 @@ public class Rotator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //rotation
+        transform.Rotate(new Vector3(0, 30, 0) * Time.deltaTime);
+
+        /*
         //rotation
         transform.Rotate(new Vector3(15, 30, 45) * Time.deltaTime);
 
@@ -41,5 +46,6 @@ public class Rotator : MonoBehaviour
                 isup = true;
             }
         }
+        */
     }
 }

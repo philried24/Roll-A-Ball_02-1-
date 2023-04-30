@@ -10,11 +10,11 @@ public class ChangeLevel : MonoBehaviour
 
     public void nextLvl ()
     {
-        SceneManager.LoadScene(player.lvlNum - 1);
+        SceneManager.LoadScene(player.lvlNum);
     }
 
     public void restartLvl ()
     {
-        SceneManager.LoadScene(player.lvlNum - 1);
+        SceneManager.LoadScene(player.lvlNum);
     }
 }

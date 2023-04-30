@@ -68,6 +68,9 @@ public class PlayerController : MonoBehaviour
             {
                 showWin();
             }
+            else if (lvlNum == 3 && count >= 16) {
+                showWin();
+            }
 
         }
     }
